@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--content是定义文档的字符编码-->
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- http-equiv是吧content属性关联到http头部-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body { /*给他一个百分之百的限定让他不能自由滑动*/
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+    <title>Web FlappyBird</title>
+</head>
+<body>
+
+<canvas id="game_canvas" width="375" height="667"></canvas>
+<!--es6最新版本推出的-->
+<!--<script type="module" src="./game.js"></script>-->
+
+<!--使用合并后的js文件-->
+<script src="dist/bundle.js"></script>
+</body>
+</html>
